@@ -1,0 +1,142 @@
+/*colours used: #2DB1FF, #212121*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Lustria');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Lustria', serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+    width: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+.article {
+    clear: both;
+}
+
+ul li a {
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #212121;
+    background-color: #2DB1FF;
+
+}
+
+.center-block {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+i {
+    font-size: 2rem;
+    margin-right: 7%;
+    margin-left: 7%;
+    padding-bottom: 20px;
+}
+
+/*35rem < Tablet View < 80rem*/
+
+@media only screen and (min-width: 35rem) {
+
+    .article img {
+        display: inline-block;
+        float: left;
+        width: 40%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        width: 45%;
+        margin: 2.5%;
+        flex-direction: none;
+        float: left;
+    }
+    .container,
+    footer {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    figure {
+        width: 45%;
+        margin: 2.5%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    .logo {
+        width: 150px;
+        float: left;
+        margin-left: 200px;
+    }
+    ul li {
+        width: 200px;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .images {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    figure {
+        width: 25%;
+    }
+
+    i {
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 1.5rem;
+    }
+
+}
